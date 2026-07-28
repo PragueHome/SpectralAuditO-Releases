@@ -8,6 +8,22 @@ Bulk-scan your music and video library with real spectral analysis - catch upsca
 
 ---
 
+## Open-source foundation, proprietary detection
+
+SpectralAuditO is built on proven open-source tools — **FFmpeg** for audio decoding, **NumPy** for the FFT, and **Qt** (via PySide6) for the desktop interface — and makes no claim to have invented them.
+
+The layer that sits on top is what makes the results reliable:
+
+- **Slope-based cutoff detection** — scans from Nyquist downward for a brick-wall frequency shelf, not a fixed dB floor, so it correctly distinguishes a gentle high-frequency rolloff in natural audio from the hard shelf a lossy encoder leaves behind. This is what prevents false positives on genuine lossless files — the costliest possible error in audio quality auditing.
+- **Soft-shelf second pass** — a wider, more forgiving scan catches the subtler shelves that low-bitrate AAC and similar codecs leave when their hard knee is gentle enough to slip past the strict pass.
+- **Per-codec tier tables and segment-sampled decoding** — codec-specific bitrate-tier lookups combined with a bounded-segment decode strategy keep large-batch scans both fast and format-accurate.
+- **Club-Grade scoring model** — a configurable weighted composite of tier position, true-peak headroom, suspicion flags, and loudness range, calibrated so users get one actionable number rather than four independent signals to weigh manually.
+- **Musical metrics pipeline** — BPM/beatgrid, musical key (with Camelot-wheel notation), and a perceptual energy rating, all built on the same decoded audio used for quality analysis.
+
+The open-source components handle the heavy lifting. The proprietary tuning and detection logic are what make the verdicts trustworthy.
+
+---
+
 ## Real detection, not guesswork
 
 SpectralAuditO decodes the actual audio and runs spectral (FFT) analysis to find the frequency cutoff a lossy encoder leaves behind - the tell-tale sign of a file that's been upscaled or mislabeled, no matter what the container metadata claims.

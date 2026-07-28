@@ -5,6 +5,8 @@ catches low-bitrate sources re-encoded to a higher bitrate, or lossy audio
 wrapped in a lossless container, even when the file's own tags say otherwise.
 Also flags corrupt files and clipping.
 
+Built on proven open-source components (FFmpeg for decoding, NumPy for the FFT, Qt/PySide6 for the GUI). The proprietary layer is the detection logic: a slope-based spectral cutoff algorithm that avoids false positives on genuine lossless audio, a soft-shelf second pass for subtle low-bitrate codecs, per-codec tier tables, segment-sampled decoding, the Club-Grade composite scoring model, and the BPM/key/energy musical metrics pipeline.
+
 This repo carries **packaged, ready-to-run builds** and end-user documentation
 only.
 

@@ -6,7 +6,7 @@ wrapped in a lossless container, even when the file's own tags say otherwise.
 Also flags corrupt files and clipping.
 
 This repo carries **packaged, ready-to-run builds** and end-user documentation
-only. For source code and development, see the main project repo.
+only.
 
 ## Download
 
@@ -19,7 +19,7 @@ Grab the latest build from the [Releases page](https://github.com/PragueHome/Spe
 - **Linux** -- `specaudit-linux-<arch>.tar.gz` (unverified prebuilt tarball --
   build from source if you hit issues)
 
-Current version: **1.0.0** (released 2026-07-28)
+Current version: **1.1.0** (released 2026-07-28)
 
 ## Showcase
 

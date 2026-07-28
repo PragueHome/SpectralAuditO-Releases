@@ -35,10 +35,6 @@ Download `SpectralAuditO-Setup.exe` from the [Releases page](https://github.com/
 
 Download `specaudit-macos.zip`, unzip it, and drag `SpectralAuditO.app` to your Applications folder. On first launch, you may need to right-click the app and select "Open" if you see a security warning (the app is unsigned).
 
-### Linux
-
-Download `specaudit-linux-<arch>.tar.gz`, unzip it, and run `./specaudit` from the extracted folder. This is an unverified prebuilt — if you encounter issues, build from source.
-
 ### From Source (Developers)
 
 ```bash

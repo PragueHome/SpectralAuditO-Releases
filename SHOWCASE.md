@@ -80,7 +80,6 @@ Configure analysis depth, musical metrics, DJ integration, and visual theme.
 
 - Windows: 10/11 (64-bit)
 - macOS: 12+ (Intel or Apple Silicon)
-- Linux: Ubuntu 20.04+ (unverified)
 - No separate ffmpeg needed - it's bundled
 - No admin rights required for portable versions
 

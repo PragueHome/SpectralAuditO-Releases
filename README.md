@@ -16,8 +16,6 @@ Grab the latest build from the [Releases page](https://github.com/PragueHome/Spe
   `specaudit-windows.zip` (portable, no install needed)
 - **macOS** -- `specaudit-macos.zip` (unzip and drag `SpectralAuditO.app` to
   Applications; first launch requires right-click -> Open if unsigned)
-- **Linux** -- `specaudit-linux-<arch>.tar.gz` (unverified prebuilt tarball --
-  open an issue on this repo if you hit problems)
 
 Current version: **1.1.0** (released 2026-07-28)
 
@@ -67,7 +65,7 @@ To verify the integrity of downloaded artifacts:
 1. **Checksums (SHA-256)** — every release includes a `CHECKSUMS.txt` asset listing
    the SHA-256 hash of each package. After downloading, verify the hash matches:
    - Windows (PowerShell): `Get-FileHash .\specaudit-windows.zip -Algorithm SHA256`
-   - macOS/Linux: `shasum -a 256 specaudit-macos.zip`
+   - macOS: `shasum -a 256 specaudit-macos.zip`
 
    Compare the output against the matching line in `CHECKSUMS.txt` from the same
    release. A mismatch means the file was corrupted or tampered with — do not run it.

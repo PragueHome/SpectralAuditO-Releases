@@ -76,10 +76,11 @@ To verify the integrity of downloaded artifacts:
    [release page](https://github.com/PragueHome/SpectralAuditO-Releases/releases/tag/v1.1.0)):
 
    ```text
-   a2ea4fd34ad0f35b6c703ab21041054fa00dc9851d3e1de06b05a7ca7c27066b  SpectralAuditO-Setup.exe
-   ce9f44fe4196df36449360aec80617981a7cd26237e3094d7c4dd1e036a4bc79  specaudit-windows.zip
-   1ad3a625dfd7ad37b375d72c6a7b047b13fd95d1e6efddda9909128a6756b1ac  specaudit-macos.zip
+   19e89b1f3c776160b7a95758cdc8ff9f8719b133e9450c0ef7cd645cc1339f88  SpectralAuditO-Setup.exe
+   dd8d9e64a3778e13bbe2efa75f935e2dcebf60a51ba4380cd316a41507f5c6ba  specaudit-windows.zip
+   d5c09c92a17db43eea9267723937a96e8bc399c732b38058f8b23aad8dccbf61  specaudit-macos.zip
    ```
+
 2. **VirusTotal scans** — each release's notes link to a
    [VirusTotal](https://www.virustotal.com/) report for every attached binary/installer,
    showing results from 70+ antivirus engines. You can also submit a downloaded file
@@ -88,9 +89,9 @@ To verify the integrity of downloaded artifacts:
    official artifact.
 
    Current v1.1.0 scans:
-   - Windows installer (`SpectralAuditO-Setup.exe`): [VirusTotal report](https://www.virustotal.com/gui/file/a2ea4fd34ad0f35b6c703ab21041054fa00dc9851d3e1de06b05a7ca7c27066b)
-   - Windows portable zip (`specaudit-windows.zip`): [VirusTotal report](https://www.virustotal.com/gui/file/ce9f44fe4196df36449360aec80617981a7cd26237e3094d7c4dd1e036a4bc79)
-   - macOS zip (`specaudit-macos.zip`): [VirusTotal report](https://www.virustotal.com/gui/file-analysis/NTZkMzhkMjBhMjFjYTQxMTI5ZGI2ODFkMjhiOTlkMGQ6MTc4NTIzNTU5NQ==)
+   - Windows installer (`SpectralAuditO-Setup.exe`): [VirusTotal report](https://www.virustotal.com/gui/file/19e89b1f3c776160b7a95758cdc8ff9f8719b133e9450c0ef7cd645cc1339f88)
+   - Windows portable zip (`specaudit-windows.zip`): [VirusTotal report](https://www.virustotal.com/gui/file/dd8d9e64a3778e13bbe2efa75f935e2dcebf60a51ba4380cd316a41507f5c6ba)
+   - macOS zip (`specaudit-macos.zip`): [VirusTotal report](https://www.virustotal.com/gui/file/d5c09c92a17db43eea9267723937a96e8bc399c732b38058f8b23aad8dccbf61)
 
    **A stray detection or two on these reports is expected and does not mean the file
    is malicious.** PyInstaller-built Python applications are a well-known source of

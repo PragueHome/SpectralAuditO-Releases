@@ -76,6 +76,7 @@ To verify the integrity of downloaded artifacts:
    ```text
    a2ea4fd34ad0f35b6c703ab21041054fa00dc9851d3e1de06b05a7ca7c27066b  SpectralAuditO-Setup.exe
    ce9f44fe4196df36449360aec80617981a7cd26237e3094d7c4dd1e036a4bc79  specaudit-windows.zip
+   1ad3a625dfd7ad37b375d72c6a7b047b13fd95d1e6efddda9909128a6756b1ac  specaudit-macos.zip
    ```
 2. **VirusTotal scans** — each release's notes link to a
    [VirusTotal](https://www.virustotal.com/) report for every attached binary/installer,
@@ -85,8 +86,9 @@ To verify the integrity of downloaded artifacts:
    official artifact.
 
    Current v1.1.0 scans:
-   - Installer (`SpectralAuditO-Setup.exe`): [VirusTotal report](https://www.virustotal.com/gui/file/a2ea4fd34ad0f35b6c703ab21041054fa00dc9851d3e1de06b05a7ca7c27066b)
-   - Portable zip (`specaudit-windows.zip`): [VirusTotal report](https://www.virustotal.com/gui/file/ce9f44fe4196df36449360aec80617981a7cd26237e3094d7c4dd1e036a4bc79)
+   - Windows installer (`SpectralAuditO-Setup.exe`): [VirusTotal report](https://www.virustotal.com/gui/file/a2ea4fd34ad0f35b6c703ab21041054fa00dc9851d3e1de06b05a7ca7c27066b)
+   - Windows portable zip (`specaudit-windows.zip`): [VirusTotal report](https://www.virustotal.com/gui/file/ce9f44fe4196df36449360aec80617981a7cd26237e3094d7c4dd1e036a4bc79)
+   - macOS zip (`specaudit-macos.zip`): [VirusTotal report](https://www.virustotal.com/gui/file-analysis/NTZkMzhkMjBhMjFjYTQxMTI5ZGI2ODFkMjhiOTlkMGQ6MTc4NTIzNTU5NQ==)
 
    **A stray detection or two on these reports is expected and does not mean the file
    is malicious.** PyInstaller-built Python applications are a well-known source of

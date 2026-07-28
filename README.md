@@ -23,12 +23,12 @@ Current version: **1.1.0** (released 2026-07-28)
 
 ## Showcase
 
-See SpectralAuditO in action: [showcase.html](showcase.html) or the
+See SpectralAuditO in action: [SHOWCASE.md](SHOWCASE.md) or the
 [PDF version](docs/SpectralAuditO-Showcase.pdf).
 
 ## User Guide
 
-Full usage documentation: [user_guide.html](docs/user_guide.html) or the
+Full usage documentation: [USER_GUIDE.md](docs/USER_GUIDE.md) or the
 [PDF version](docs/SpectralAuditO-User-Guide.pdf).
 
 ## System Requirements
@@ -41,5 +41,5 @@ Full usage documentation: [user_guide.html](docs/user_guide.html) or the
 ## License / Support
 
 See the in-app Help menu for licensing and activation details, or the
-[User Guide](docs/user_guide.html)'s Licensing section. For support or bug
+[User Guide](docs/USER_GUIDE.md)'s Licensing section. For support or bug
 reports, open an issue on this repo.

@@ -17,7 +17,7 @@ Grab the latest build from the [Releases page](https://github.com/PragueHome/Spe
 - **macOS** -- `specaudit-macos.zip` (unzip and drag `SpectralAuditO.app` to
   Applications; first launch requires right-click -> Open if unsigned)
 - **Linux** -- `specaudit-linux-<arch>.tar.gz` (unverified prebuilt tarball --
-  build from source if you hit issues)
+  open an issue on this repo if you hit problems)
 
 Current version: **1.1.0** (released 2026-07-28)
 
@@ -109,16 +109,7 @@ To verify the integrity of downloaded artifacts:
    it on the report page — a hit from a well-known signature-based engine (naming a
    specific known malware family) would be worth investigating, whereas a handful of
    generic heuristic labels (e.g. "Gen:Heur", "PUA", "Malicious.Moderate") clustered
-   around the "unsigned Python bundle" engines is the expected pattern. When in doubt,
-   building from source (see item 5 below) sidesteps the question entirely, since your
-   own build won't trip the "previously unseen binary" heuristics.
-3. **Source code** — all source code is public and auditable at
-   [PragueHome/FTF](https://github.com/PragueHome/FTF) (the development repo)
-4. **Build transparency** — build scripts are committed; anyone can rebuild from
-   source and verify artifacts match
-5. **Build from source** — for maximum security assurance, clone the repo and build
-   with `scripts/build_windows.ps1` (Windows) or `scripts/build_macos.sh` (macOS) —
-   see [FTF/packaging/README_BUILD.md](https://github.com/PragueHome/FTF/blob/main/packaging/README_BUILD.md)
+   around the "unsigned Python bundle" engines is the expected pattern.
 
 ### Planned: Code Signing (Future)
 

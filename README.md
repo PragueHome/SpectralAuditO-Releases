@@ -71,6 +71,14 @@ To verify the integrity of downloaded artifacts:
 
    Compare the output against the matching line in `CHECKSUMS.txt` from the same
    release. A mismatch means the file was corrupted or tampered with — do not run it.
+
+   Current v1.1.0 checksums (also attached as `CHECKSUMS.txt` on the
+   [release page](https://github.com/PragueHome/SpectralAuditO-Releases/releases/tag/v1.1.0)):
+
+   ```text
+   a2ea4fd34ad0f35b6c703ab21041054fa00dc9851d3e1de06b05a7ca7c27066b  SpectralAuditO-Setup.exe
+   ce9f44fe4196df36449360aec80617981a7cd26237e3094d7c4dd1e036a4bc79  specaudit-windows.zip
+   ```
 2. **VirusTotal scans** — each release's notes link to a
    [VirusTotal](https://www.virustotal.com/) report for every attached binary/installer,
    showing results from 70+ antivirus engines. You can also submit a downloaded file

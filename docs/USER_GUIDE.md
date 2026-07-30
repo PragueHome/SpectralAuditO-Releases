@@ -5,8 +5,9 @@ inside each file's audio data rather than trusting the filename or container met
 can detect fakes — files that claim to be 320 kbps MP3 or FLAC but were actually upscaled from
 a lower-quality source.
 
-### What’s new in 1.1.0
-This release focuses on making the results easier to act on:
+### What’s new in 1.2.0
+This release focuses on making the app easier to trust and easier to use:
+- **Signed Windows installers and MSIX** — the Windows installer and MSIX package are now signed as part of the build pipeline, improving trust and reducing install-time warnings.
 - **Club-Grade score** — a single 0–100% playability score, shown as Wi‑Fi bars in the results table.
 - **Optional musical metrics** — BPM, musical key, and energy can be shown as separate columns when enabled.
 - **Clearer support and licensing** — licence requests and support contact are surfaced more consistently.

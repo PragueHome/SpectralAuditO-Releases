@@ -17,7 +17,7 @@ Grab the latest build from the [Releases page](https://github.com/PragueHome/Spe
 - **macOS** -- `specaudit-macos.zip` (unzip and drag `SpectralAuditO.app` to
   Applications; first launch requires right-click -> Open if unsigned)
 
-Current version: **1.1.0** (released 2026-07-30)
+Current version: **1.2.0** (released 2026-07-30)
 
 ## Showcase
 

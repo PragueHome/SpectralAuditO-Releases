@@ -5,8 +5,6 @@ catches low-bitrate sources re-encoded to a higher bitrate, or lossy audio
 wrapped in a lossless container, even when the file's own tags say otherwise.
 Also flags corrupt files and clipping.
 
-Built on proven open-source components (FFmpeg for decoding, NumPy for the FFT, Qt/PySide6 for the GUI). The proprietary layer is the detection logic: a slope-based spectral cutoff algorithm that avoids false positives on genuine lossless audio, a soft-shelf second pass for subtle low-bitrate codecs, per-codec tier tables, segment-sampled decoding, the Club-Grade composite scoring model, and the BPM/key/energy musical metrics pipeline.
-
 This repo carries **packaged, ready-to-run builds** and end-user documentation
 only.
 
@@ -19,7 +17,7 @@ Grab the latest build from the [Releases page](https://github.com/PragueHome/Spe
 - **macOS** -- `specaudit-macos.zip` (unzip and drag `SpectralAuditO.app` to
   Applications; first launch requires right-click -> Open if unsigned)
 
-Current version: **1.1.0** (released 2026-07-28)
+Current version: **1.1.0** (released 2026-07-30)
 
 ## Showcase
 
@@ -71,27 +69,12 @@ To verify the integrity of downloaded artifacts:
 
    Compare the output against the matching line in `CHECKSUMS.txt` from the same
    release. A mismatch means the file was corrupted or tampered with — do not run it.
-
-   Current v1.1.0 checksums (also attached as `CHECKSUMS.txt` on the
-   [release page](https://github.com/PragueHome/SpectralAuditO-Releases/releases/tag/v1.1.0)):
-
-   ```text
-   19e89b1f3c776160b7a95758cdc8ff9f8719b133e9450c0ef7cd645cc1339f88  SpectralAuditO-Setup.exe
-   dd8d9e64a3778e13bbe2efa75f935e2dcebf60a51ba4380cd316a41507f5c6ba  specaudit-windows.zip
-   d5c09c92a17db43eea9267723937a96e8bc399c732b38058f8b23aad8dccbf61  specaudit-macos.zip
-   ```
-
 2. **VirusTotal scans** — each release's notes link to a
    [VirusTotal](https://www.virustotal.com/) report for every attached binary/installer,
    showing results from 70+ antivirus engines. You can also submit a downloaded file
    yourself at [virustotal.com/gui/home/upload](https://www.virustotal.com/gui/home/upload)
    and compare its SHA-256 to the one in `CHECKSUMS.txt` to confirm you scanned the exact
    official artifact.
-
-   Current v1.1.0 scans:
-   - Windows installer (`SpectralAuditO-Setup.exe`): [VirusTotal report](https://www.virustotal.com/gui/file/19e89b1f3c776160b7a95758cdc8ff9f8719b133e9450c0ef7cd645cc1339f88)
-   - Windows portable zip (`specaudit-windows.zip`): [VirusTotal report](https://www.virustotal.com/gui/file/dd8d9e64a3778e13bbe2efa75f935e2dcebf60a51ba4380cd316a41507f5c6ba)
-   - macOS zip (`specaudit-macos.zip`): [VirusTotal report](https://www.virustotal.com/gui/file/d5c09c92a17db43eea9267723937a96e8bc399c732b38058f8b23aad8dccbf61)
 
    **A stray detection or two on these reports is expected and does not mean the file
    is malicious.** PyInstaller-built Python applications are a well-known source of

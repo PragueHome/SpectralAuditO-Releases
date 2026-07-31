@@ -359,7 +359,6 @@ specaudit [paths...] [options]
 |---|---|
 | `paths` | One or more files or folders to scan. Folders are scanned recursively unless `--no-recursive` is set. |
 | `--from-m3u FILE` | Scan the tracks listed in an M3U/M3U8 playlist. |
-| `--from-rekordbox-xml FILE` | Scan from a Rekordbox XML collection export. |
 | `--from-virtualdj-db FILE` | Scan from a VirtualDJ `database.xml`. |
 | `--from-serato-crate DIR` | Scan from a Serato library folder. |
 | `--playlist NAME` | (Rekordbox) Restrict to a specific playlist. Repeatable. |
